@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "SFArabic";
+    src: url(./fonts/SFArabic-Regular.ttf);
+}
+
+body {
+    font-family: "SFArabic", sans-serif;
+    font-size: 24px;
+}
+
+div {
+    height: 50px;
+}
+
+.box1 {
+    background-color: crimson;
+    border: 2px solid rgb(0, 255, 13);
+    /* margin-bottom: 20px; */
+    /* margin: 40px;*/
+    /* margin: 40px 20px; */
+    /* margin: 10px 20px 30px 40px; */
+}
+
+.box2 {
+    background-color: blue;
+}

@@ -1,0 +1,56 @@
+@font-face {
+    font-family: "SFArabic";
+    src: url(./fonts/SFArabic-Regular.ttf);
+}
+
+html {
+    font-size: 30px;
+}
+
+body {
+    font-family: "SFArabic", sans-serif;
+    /* font-size: 24px; */
+}
+
+
+
+
+.content {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(228, 57, 151);
+}
+.box {
+    width: 50%;
+    height: 50%;
+    background-color: blue;
+}
+
+
+
+
+.content2 {
+    width: 5rem;
+    height: 5rem; /* 1rem = 30px => 2rem = 60px => 5rem = 150px*/
+    background-color: rgb(111, 201, 0);
+}
+
+
+
+
+.content3{
+    width: 80vw; /* 80% of weight of screen you see*/
+    height: 500px;
+    background-color: rgb(228, 122, 0);
+}
+
+
+
+
+h2{
+    font-size: 3rem;
+}
+
+span {
+    font-size: 0.5em;
+}

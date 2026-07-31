@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "SFArabic";
+    src: url(./fonts/SFArabic-Regular.ttf);
+}
+
+/* * {
+    box-sizing: border-box;
+} */
+
+body {
+    font-family: "SFArabic", sans-serif;
+}
+
+.content1{
+    width: 200px;
+    height: 200px;
+    border: 15px solid red;
+    padding: 26px;
+    color: white;
+    background-color: blueviolet;
+}
+
+.content2 {
+    width: 200px;
+    height: 200px;
+    border: 15px solid red;
+    padding: 26px;
+    color: white;
+    background-color: blueviolet;
+    box-sizing: border-box; /*برای اینکه فقط   width , height طول عنصر را تغییر دهد.*/
+    /*This property defines how the width and height of an element are calculated: should they include padding and borders, or not.*/
+    /*box-sizing => بصورت پیش فرض content-box است.*/
+}

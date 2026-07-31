@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "SFArabic";
+    src: url(./fonts/SFArabic-Regular.ttf);
+}
+
+body {
+    font-family: "SFArabic", sans-serif;
+    min-height: 100vh;
+}
+
+div {
+    width: 400px;
+    height: 200px;
+    background-color: rgb(235, 133, 0);
+
+
+    /* max-width: ;
+    min-width: ;
+
+    max-height: ;
+    min-height: ; */
+}
+
+p {
+    min-width: 300px;
+    max-width: 500px;
+}

@@ -1,0 +1,72 @@
+@font-face {
+    font-family: "SFArabic";
+    src: url(./fonts/SFArabic-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "SFArabic", sans-serif;
+}
+
+div {
+    background-color: rgb(141, 0, 0);
+    color: white;
+    border-radius: 12px;
+    padding: 24px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    text-align: justify;
+}
+
+h1 {
+    margin-bottom: 12px;
+    text-shadow: 2px 2px 0px rgb(0, 191, 191);
+    font-weight: 100;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(52, 126, 0);
+    font-size: 20px;
+    /*
+    width: 50px;
+    height: 500px; => these properties don't work on inline elements.
+    */
+
+    /* Display elements those works: */
+    margin-right: 24px;
+    padding-right: 24px;
+
+    /* Display elements those don't works: */
+    margin-top: 1000px; /* => doesn't effect */
+
+    /*
+    display: block; => then can change properties.
+    */
+
+    /*
+    display: inline-block; =>  نه عرض را کامل میگیرد و نه محدودیت های inline را دارد.
+    */
+
+    /*
+    display: none; => بعضی از عناصر که در صفحات مختلف با این ویژگی مخفی میشوند.
+    */
+}
+
+a:hover {
+    color: coral;
+}
+
+a:active {
+    color: yellow; 
+}

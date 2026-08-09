@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "SFArabic";
+    src: url(./fonts/SFArabic-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "SFArabic", sans-serif;
+}
+
+div {
+    background-color: rgb(141, 0, 0);
+    color: white;
+    border-radius: 12px;
+    padding: 24px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    text-align: justify;
+}
+
+h1 {
+    margin-bottom: 12px;
+    text-shadow: 2px 2px 0px rgb(0, 191, 191);
+    font-weight: 100;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+ul {
+    margin-bottom: 14px;
+    list-style-image: url("./images/icon.svg");
+    /*
+    list-style: none;
+    list-style-type: none;
+    */
+    border: 1px solid black;
+    padding: 0;
+    list-style-position: inside;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(52, 126, 0);
+    font-size: 20px;
+}
+
+a:hover {
+    color: coral;
+}
+
+a:active {
+    color: yellow; 
+}

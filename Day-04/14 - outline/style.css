@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "SFArabic";
+    src: url(./fonts/SFArabic-Regular.ttf);
+}
+
+body {
+    font-family: "SFArabic", sans-serif;
+}
+
+.btn {
+    font-size: 24px;
+    width: 100px;
+    margin-top: 50px;
+    margin-right: 50px;
+
+    outline: 2px solid blue; /* outline: none; */
+    outline-offset: 10px; /* space between border and outline */
+}
+ input{
+    margin-right: 20px;
+    outline-color: red;
+ }

@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "SFArabic";
+    src: url(./fonts/SFArabic-Regular.ttf);
+}
+
+body {
+    font-family: "SFArabic", sans-serif;
+    font-size: 24px;
+}
+
+h1 {
+    /* border-width: 1px;
+    border-style: dashed;
+    border-color: chartreuse; */
+
+    /* border: 1px solid chartreuse; */
+
+    /* border-right-color: orangered;
+    border-left-color: orangered; */
+
+    background-color: pink;
+    color: white;
+    border-radius: 25px;
+    /* border-top-right-radius: 30px; */
+    border-right: 8px solid rgb(204, 35, 91);
+}

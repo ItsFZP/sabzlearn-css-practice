@@ -1,0 +1,75 @@
+@font-face {
+    font-family: "SFArabic";
+    src: url(./fonts/SFArabic-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "SFArabic", sans-serif;
+    font-size: 32px;
+}
+
+.box1, .box2, .box3, .box4{
+    height: 150px;
+    margin-bottom: 24px;
+}
+
+.box1 {
+    background-color: darkred;
+     position: relative; /* => باعث شد که جابه‌جایی از شمان ایی که بود انجام شود.
+    پوزیشن  relative  زمانی بکار می‌آید که بخواهیم از جهت‌ها (top, bottom, right, left) استفاده بکنیم.
+    پوزیشن relative نسبت به مکان و موقعیت خودش جابه‌جا میشود. */
+    right: 24px; 
+
+     /* margin-top: 2px; => روی بقیه المان‌ها هک تاثیرگذار است و جابه‌جا میکند. */
+}
+
+.box2 {
+    background-color: darkblue;
+    position: relative;
+    /* top: 50px; => خود باکس ۵۰ پیکسل پایین میرود بدون اینکه بقیه المان‌ها را تحت تاثیر خود برایی جابه‌جایی قرار دهد. */
+}
+
+.box2_child {
+    width: 100px;
+    height: 100px;
+    background-color: darkgoldenrod;
+    
+    /* ویژگی absolute به تنهایی استفاده نمیشود. این پیژگی به نسبت parentای که position آن relatives باشد جابه‌جا میشود. */
+    /* اگر آن عنصری که ویژگی absolute دارد parent : relatives داشته باشد نسبت به آن(parent)، موقعیت ان جابه‌جا یا تثبیت میشود. اگر هیچ parent ای نداشت، نسبت به body موقعیت میگیرد. */
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    /* اکر نیاز باشد بنویسی:
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0; => inset: 0;
+    */
+}
+
+.box3 {
+    background-color: darkgreen;
+     position: fixed; /* => این position نسبت به veiwport(صفحه ای که میبینیم) موقعیت میگیرد. 
+    در موقعیتی که شما تعیین میکنید قرار میگیرد. */
+    width: 50%;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 0;
+}   
+
+.box4 { 
+    background-color: darksalmon;
+    position: sticky; /* استفاده معمولا در هدرهای سایت‌ها */
+    top: 0;
+}
+
+.overlay {
+    height: 2000px;
+}
+

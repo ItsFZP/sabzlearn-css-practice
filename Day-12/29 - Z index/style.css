@@ -1,0 +1,59 @@
+@font-face {
+    font-family: "SFArabic";
+    src: url(./fonts/SFArabic-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "SFArabic", sans-serif;
+    background-color: rgb(204, 204, 204);
+}
+
+.box1, .box2, .box3 {
+    height: 200px;
+    border-width: 15px;
+    border-style: solid;
+}
+
+.box1 {
+    background-color: crimson;
+    border-color: rgb(231, 93, 121);
+    position: relative;
+    /* z-index  برروی المان هایی تاثیر میگذارد که position  غیر از static گرفته باشند. (بصورت پیش فرض همه المان ها static هستند.) */
+}
+
+.box2 {
+    background-color: blue;
+    border-color: rgb(104, 104, 255);
+}
+
+ .box3 {
+    background-color: darkgreen;
+    border-color: rgb(78, 158, 78);
+ }
+
+.box1_child1, .box1_child2 {
+    width: 100px;
+    height: 80px;
+    font-size: 32px;
+    color: white;
+    text-align: center;
+    line-height: 80px;
+}
+
+.box1_child1 {
+    background-color: rgb(208, 255, 0);
+    position: absolute;
+    right: 670px;
+    z-index: 2;
+}
+
+.box1_child2 {
+    background-color: rgb(0, 255, 145);
+    position: absolute;
+    left: 670px;
+}

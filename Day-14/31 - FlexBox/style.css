@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "SFArabic";
+    src: url(./fonts/SFArabic-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "SFArabic", sans-serif;
+}
+
+.container1, .container2 {
+    width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid black;
+
+    display: flex; /* => یک ویژگی است که برای parent تنظیم میشود، خاصیت flexible به فرزندان اعمال میشود. */
+    gap: 24px; /* فاصله بین المان ها. در جایی نوشته میشود که display: flex; داده باشیم. */
+    /* flex-direction: column; => در حالت پیش فرض بصورت ردیفی میسازد. <= در حالت ستونی و زیر هم میسازد. */
+    /* flex-wrap: wrap; => تعیین میکند اگر مثلا عرض از container بیشتر شد و سرریز کرد، بشکند و به خط بعد برود. - بصورت پیش فرض  nowrap است. */
+    flex-direction: row;
+    justify-content: space-between;
+}   
+
+.flex_item {
+    height: 200px;
+    width: 200px;
+    background-color: palevioletred;
+}
+
+.container2 {
+    gap: 0;
+    height: 300px;
+
+    justify-content: center; /* مرکز کردن در محور  xها */
+    align-items: center; /* مرکز کردن در محور  yها */
+    
+}
+
+.flex_item_blue {
+    height: 100px;
+    width: 200px;
+    background-color: blue;
+}
+
+.flex_item_red {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+}
+
+.flex_item_yellow {
+    height: 150px;
+    width: 200px;
+    background-color: yellow;
+}
